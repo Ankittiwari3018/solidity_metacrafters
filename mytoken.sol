@@ -11,7 +11,7 @@ contract My_Token {
  // mapping
     mapping(address => uint) public balances;
 
- // function to mint tokens
+ // function to burn tokens
 
     function burn (address _address, uint _value) public {
        if (balances[_address] >= _value) {
